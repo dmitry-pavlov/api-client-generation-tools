@@ -1,14 +1,10 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
-using Microsoft.VisualStudio.Threading;
 using NSwag.Commands;
-using Task = System.Threading.Tasks.Task;
 
 namespace CodingMachine.VisualStudio.ApiClientGenerationTools.Generators
 {
