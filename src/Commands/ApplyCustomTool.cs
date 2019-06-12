@@ -2,6 +2,7 @@
 using System.ComponentModel.Design;
 using CodingMachine.VisualStudio.ApiClientGenerationTools.Generators;
 using EnvDTE;
+using Microsoft;
 using Microsoft.VisualStudio.Shell;
 using Task = System.Threading.Tasks.Task;
 
@@ -15,9 +16,9 @@ namespace CodingMachine.VisualStudio.ApiClientGenerationTools.Commands
         
         public static async Task InitializeAsync(AsyncPackage package)
         {
-            ThreadHelper.ThrowIfNotOnUIThread();
-
-            _dte = await package.GetServiceAsync(typeof(DTE)) as DTE;
+            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+            _dte = (DTE) await package.GetServiceAsync(typeof(DTE));
+            Assumes.Present(_dte);
 
             var commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as IMenuCommandService;
 
@@ -30,6 +31,7 @@ namespace CodingMachine.VisualStudio.ApiClientGenerationTools.Commands
 
         private static void OnExecute(object sender, EventArgs e)
         {
+            ThreadHelper.ThrowIfNotOnUIThread();
             ProjectItem item = _dte.SelectedItems.Item(1).ProjectItem;
 
             if (item != null)
