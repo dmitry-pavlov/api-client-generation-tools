@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using System.Runtime.InteropServices;
-using System.Text;
 using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
@@ -25,9 +24,13 @@ namespace CodingMachine.VisualStudio.ApiClientGenerationTools.Generators
 
         protected override byte[] GenerateCode(string inputFileName, string inputFileContent)
         {
-            var document = NSwagDocumentBase.FromJson<NSwagDocument>(inputFileName, inputFileContent);
-            var openApiDocumentExecutionResult = ThreadHelper.JoinableTaskFactory.Run(() => document.ExecuteAsync());
-            return Encoding.UTF8.GetBytes(openApiDocumentExecutionResult.Output);
+            var document = ThreadHelper.JoinableTaskFactory.Run(() => NSwagDocument.LoadAsync(inputFileName));
+            ThreadHelper.JoinableTaskFactory.Run(() => document.ExecuteAsync());
+
+            var generatedFilePath = document.CodeGenerators.OpenApiToCSharpClientCommand.OutputFilePath;
+            var content = File.ReadAllBytes(generatedFilePath);
+            return content;
         }
+
     }
 }
