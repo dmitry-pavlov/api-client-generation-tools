@@ -6,9 +6,12 @@
         <Description xml:space="preserve">API Client Generation Tools for Visual Studio</Description>
         <MoreInfo>https://github.com/dmitry-pavlov/api-client-generation-tools</MoreInfo>
         <License>Resources\EULA.txt</License>
+        <GettingStartedGuide>https://github.com/dmitry-pavlov/api-client-generation-tools/blob/master/README.md</GettingStartedGuide>
+        <ReleaseNotes>https://github.com/dmitry-pavlov/api-client-generation-tools/blob/master/docs/vs/CHANGELOG.MD</ReleaseNotes>
         <Icon>Resources\ApiClientGenerationTools.ico</Icon>
         <PreviewImage>Resources\Icon128x128.png</PreviewImage>
         <Tags>Custom Tool, OpenAPI, Swagger, REST API, OAS, OAI, Web API, .NET Core, HttpClient, Swashbuckle, NSwag, NSwagStudio, Code Generation, Scaffolding, Coding, Tools</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 17.0)" />
