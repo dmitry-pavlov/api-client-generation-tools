@@ -1,16 +1,17 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using CodingMachine.VisualStudio.ApiClientGenerationTools;
 
-[assembly: AssemblyTitle("API Client Generation Tools")]
-[assembly: AssemblyDescription("API Client Generation Tools for Microsoft Visual Studio")]
+[assembly: AssemblyTitle(Constants.ProductName)]
+[assembly: AssemblyDescription(Constants.ProductDescription)]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Dmitry Pavlov")]
-[assembly: AssemblyProduct("API Client Generation Tools")]
-[assembly: AssemblyCopyright("© 2019 Dmitry Pavlov (aka Coding Machine)")]
+[assembly: AssemblyCompany(Constants.Author)]
+[assembly: AssemblyProduct(Constants.ProductName)]
+[assembly: AssemblyCopyright(Constants.Copyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: AssemblyVersion("0.0.1.0")]
-[assembly: AssemblyFileVersion("0.0.1.0")]
+[assembly: AssemblyVersion(Constants.ProductVersion+".0")]
+[assembly: AssemblyFileVersion(Constants.ProductVersion+".0")]
