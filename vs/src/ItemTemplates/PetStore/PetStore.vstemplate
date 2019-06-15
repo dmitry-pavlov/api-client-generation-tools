@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>PetStore.nswag</DefaultName>
+    <Name>PetStore API</Name>
+    <TemplateID>13263952-1da0-4725-aa96-62963f34a6ad</TemplateID>
+    <Description>NSwag config file to generate C# and TypeScript HTTP clients for petstore.swagger.io API.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+    <ShowByDefault>true</ShowByDefault>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem 
+      SubType="" 
+      TargetFileName="$fileinputname$.nswag" 
+      ReplaceParameters="true"
+      CustomTool="NswagCodeGenerator">PetStore.nswag</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
