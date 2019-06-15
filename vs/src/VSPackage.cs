@@ -18,7 +18,7 @@ namespace CodingMachine.VisualStudio.ApiClientGenerationTools
         public const string NswagExt = "nswag";
         public const string Author = "Dmitry Pavlov";
         public const string Copyright = "© 2019 " + Author + " (aka Coding Machine)";
-        public const string ProductVersion = "0.0.1";
+        public const string ProductVersion = "0.0.2";
         public const string ProductGitHib = "https://github.com/dmitry-pavlov/api-client-generation-tools"; // keep the same with .resx, .vsixmanifest
 
         public const string NSwagStudioName = "NSwagStudio"; 

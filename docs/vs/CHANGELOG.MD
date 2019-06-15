@@ -1,11 +1,15 @@
 # Road map for `API Client Generation Tools for Visual Studio`
 
-- [ ] Release alpha version of `API Client Generation Tools for Visual Studio` extension which generates HttpClient for API.
+- [ ] Gather [feedback](https://github.com/dmitry-pavlov/api-client-generation-tools/issues/new?title=FEATURE), fix critical [bugs](https://github.com/dmitry-pavlov/api-client-generation-tools/issues/new?title=BUG), add most requested features.
 
 # Change log
 
 These are the changes to each version that has been released on the official Visual Studio extension gallery.
 
-## 0.0.1 `(2019-06-??)`
+## 0.0.2 `(2019-06-15)`
 
-- [ ] Release alpha version of `API Client Generation Tools for Visual Studio` extension [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 
+- [x] Release minimal value version of [API Client Generation Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools)
+
+## 0.0.1 `(2019-06-12)`
+
+- [x] Initial version of [API Client Generation Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools) extension Visual Studio Marketplace.
