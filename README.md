@@ -1,4 +1,10 @@
-# API Client Generation Tools for Visual Studio
+# API Client Generation Tools 
+
+|         | Visual Studio           | Visual Studio Code  | JetBrains Rider  |
+| ------------- |:-------------:| -----:|-----:|
+| Status     | [released v0.0.2](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools)  | exploring extensibility options  | exploring extensibility options |
+
+## For Visual Studio
 
 [API Client Generation Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools) is a Visual Studio extension to generate `C#` and `TypeScript` `HttpClient` code for `OpenAPI` (formerly [`Swagger API`](https://swagger.io/docs/specification/about/)) web service with [NSwag](https://github.com/RSuter/NSwag) toolchain.
 
