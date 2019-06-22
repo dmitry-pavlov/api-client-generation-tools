@@ -5,6 +5,9 @@
 | Status     | [released v0.0.2](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools)  | exploring extensibility options  | exploring extensibility options |
 | Supported versions     | VS2017/2019| TBD  | TBD |
 
+# Support Development
+Note a lovely :heart: `Sponsor` button with available options at the top of this page. Your support is much appreciated!
+
 ## For Visual Studio
 
 [API Client Generation Tools for Visual Studio](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools) is a Visual Studio extension to generate `C#` and `TypeScript` `HttpClient` code for `OpenAPI` (formerly [`Swagger API`](https://swagger.io/docs/specification/about/)) web service with [NSwag](https://github.com/RSuter/NSwag) toolchain.
@@ -31,5 +34,3 @@ See the [changelog](docs/vs/CHANGELOG.MD) for the further development plans and 
 # Feedback
 Please feel free to [request a feature](https://github.com/dmitry-pavlov/api-client-generation-tools/issues/new?title=FEATURE) or [report a bug](https://github.com/dmitry-pavlov/api-client-generation-tools/issues/new?title=BUG).
 
-# Support Development
-Note a lovely :heart: `Sponsor` button with available options at the top of this page. Your support is much appreciated!
