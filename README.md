@@ -1,8 +1,9 @@
 # API Client Generation Tools 
 
-|         | Visual Studio           | Visual Studio Code  | JetBrains Rider  |
+|         | [Visual Studio](https://visualstudio.microsoft.com/vs/)           | [Visual Studio Code](https://code.visualstudio.com/)  | [JetBrains Rider](https://www.jetbrains.com/rider/)  |
 | ------------- |:-------------:| -----:|-----:|
 | Status     | [released v0.0.2](https://marketplace.visualstudio.com/items?itemName=dmitry-pavlov.ApiClientGenerationTools)  | exploring extensibility options  | exploring extensibility options |
+| Supported versions     | VS2017/2019| TBD  | TBD |
 
 ## For Visual Studio
 
