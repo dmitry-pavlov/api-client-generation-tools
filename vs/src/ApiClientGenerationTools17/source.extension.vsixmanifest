@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="ApiClientGenerationTools17.37310a92-2330-48dd-b457-cb15f130f808" Version="0.0.2" Language="en-US" Publisher="Dmitry Pavlov" />
+    <DisplayName>API Client Generation Tools</DisplayName>
+    <Description xml:space="preserve">API Client Generation Tools for Visual Studio</Description>
+    <MoreInfo>https://github.com/dmitry-pavlov/api-client-generation-tools</MoreInfo>
+    <License>Resources\EULA.txt</License>
+    <GettingStartedGuide>https://github.com/dmitry-pavlov/api-client-generation-tools/blob/master/README.md</GettingStartedGuide>
+    <ReleaseNotes>https://github.com/dmitry-pavlov/api-client-generation-tools/blob/master/docs/vs/CHANGELOG.MD</ReleaseNotes>
+    <Icon>Resources\ApiClientGenerationTools.ico</Icon>
+    <PreviewImage>Resources\Icon128x128.png</PreviewImage>
+    <Tags>Custom Tool, OpenAPI, Swagger, REST API, OAS, OAI, Web API, .NET Core, HttpClient, Swashbuckle, NSwag, NSwagStudio, Code Generation, Scaffolding, Coding, Tools</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
+  </Installation>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
