@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>406a260b-8a7a-4c0b-894e-d26b2afc8cda</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ApiClientGenerationToolsShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\ApplyCustomTool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generators\NswagCodeGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VSPackage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)VSPackage.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)ItemTemplates\PetStore\PetStore.nswag" />
+    <None Include="$(MSBuildThisFileDirectory)ItemTemplates\PetStore\PetStore.vstemplate" />
+    <None Include="$(MSBuildThisFileDirectory)ItemTemplates\PetStore\__PreviewImage.png" />
+    <None Include="$(MSBuildThisFileDirectory)ItemTemplates\PetStore\__TemplateIcon.ico" />
+    <None Include="$(MSBuildThisFileDirectory)source.extension.vsixmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)ItemTemplates\PetStore.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
